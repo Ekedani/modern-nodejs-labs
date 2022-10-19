@@ -6,8 +6,8 @@
   "scripts": {
     "eslint": "eslint ./**/*.ts --ignore-path .gitignore",
     "eslint:fix": "eslint ./**/*.ts --fix --ignore-path .gitignore",
-    "format": "prettier ./**/*.ts --check --ignore-path .gitignore",
-    "format:fix": "prettier ./**/*.ts --write --ignore-path .gitignore",
+    "format": "prettier --check . --ignore-path .gitignore",
+    "format:fix": "prettier --write . --ignore-path .gitignore",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
