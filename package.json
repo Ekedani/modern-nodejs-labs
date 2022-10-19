@@ -6,8 +6,8 @@
   "scripts": {
     "eslint": "eslint ./**/*.js --ignore-path .gitignore",
     "eslint:fix": "eslint ./**/*.js --fix --ignore-path .gitignore",
-    "prettier": "echo \"Error: no commands specified\" && exit 1",
-    "prettier:fix": "echo \"Error: no commands specified\" && exit 1",
+    "format": "prettier ./**/*.js --check --ignore-path .gitignore",
+    "format:fix": "prettier ./**/*.js --write --ignore-path .gitignore",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
