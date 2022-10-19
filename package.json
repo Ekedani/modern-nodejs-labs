@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "eslint": "echo \"Error: no commands specified\" && exit 1",
-    "eslint:fix": "echo \"Error: no commands specified\" && exit 1",
+    "eslint": "eslint ./**/*.js --ignore-path .gitignore",
+    "eslint:fix": "eslint ./**/*.js --fix --ignore-path .gitignore",
     "prettier": "echo \"Error: no commands specified\" && exit 1",
     "prettier:fix": "echo \"Error: no commands specified\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,6 +23,9 @@
   "homepage": "https://github.com/Ekedani/modern-nodejs-labs#readme",
   "devDependencies": {
     "eslint": "^8.25.0",
+    "eslint-config-metarhia": "^8.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-sonar": "^0.9.2",
     "husky": "^8.0.1",
     "prettier": "^2.7.1"
   }
